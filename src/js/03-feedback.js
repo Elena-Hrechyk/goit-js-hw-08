@@ -18,9 +18,10 @@ feedbackForm.addEventListener('input', throttle(saveInputData, 500));
 
 function onSubmitForm(evt) {
   evt.preventDefaule();
-  const currentInput = JSON.parse(localStorage.getItem(KEY_LOCAL));
+
+  console.log(JSON.parse(localStorage.getItem(KEY_LOCAL)));
   evt.currentTarget.reset();
-  console.log(currentInput);
+
   localStorage.removeItem(STORAGE_KEY);
 }
 
