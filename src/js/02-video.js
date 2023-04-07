@@ -12,6 +12,5 @@ function saveCurrentTime(evt) {
 }
 
 const getCurrentTime = JSON.parse(localStorage.getItem(LOCAL_KEY));
-console.log(getCurrentTime);
 
 player.setCurrentTime(getCurrentTime);
